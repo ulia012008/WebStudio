@@ -38,6 +38,10 @@ a:focus {
   font-style: normal;
 }
 
+.adress_all {
+  font-style: normal;
+}
+
 .address {
   font-size: 16px;
   line-height: 1.5;
@@ -105,4 +109,22 @@ button:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+}
+
+.list {
+  background-color: #FFFFFF;
+}
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.logo-footer {
+  color: #f4f4fd;
+}
+
+.p_footer {
+  line-height: 1.5;
+  color: #F4F4FD;
+  letter-spacing: 0.02em;
 }
