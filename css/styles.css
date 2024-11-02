@@ -26,12 +26,20 @@ body {
   color: #2e2f42;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: #404bbf;
 }
 
 a:focus {
   color: #404bbf;
+}
+
+ul {
+  list-style: none;
 }
 
 .addres {
