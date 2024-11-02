@@ -111,6 +111,10 @@ button:focus {
   color: #2e2f42;
 }
 
+.list {
+  background-color: #FFFFFF;
+}
+
 .our_team {
   background-color: #FFFFFF;
 }
