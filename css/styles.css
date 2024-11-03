@@ -11,13 +11,35 @@ body {
   margin-bottom: 100px;
 }
 
+img {
+  display: block;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .container_header {
+  display: flex;
+  width: 1158px;
   text-align: center;
   height: 72px;
   height: 72px;
-  margin: auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 332px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+
 }
 
 .container_face {
@@ -37,7 +59,7 @@ body {
 .images {}
 
 .logo {
-
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -53,12 +75,14 @@ body {
 }
 
 .nav-menu {
-
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
 }
 
 a {
@@ -86,12 +110,10 @@ p {
   box-sizing: border-box;
 }
 
-.addres {
-  font-style: normal;
-}
-
 .adress_all {
   font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address {
