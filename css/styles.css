@@ -2,9 +2,42 @@ body {
   color: #434455;
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
+  width: 1440px;
+  height: 3300px;
+  max-width: 1440px;
+  margin-left: 156px;
+  margin-right: 156px;
+  margin-top: 24px;
+  margin-bottom: 100px;
 }
 
+.container_header {
+  text-align: center;
+  height: 72px;
+  height: 72px;
+  margin: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.container_face {
+  height: 600;
+  margin: auto;
+  padding-top: 188px;
+}
+
+.container_advantages {}
+
+.container_our_team {}
+
+.container_our_portfolio {}
+
+.container_footer {}
+
+.images {}
+
 .logo {
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -12,6 +45,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+
 }
 
 .logo-part {
@@ -19,6 +53,7 @@ body {
 }
 
 .nav-menu {
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -40,6 +75,15 @@ a:focus {
 
 ul {
   list-style: none;
+  padding-left: 0;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  box-sizing: border-box;
 }
 
 .addres {
