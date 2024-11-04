@@ -53,6 +53,17 @@ img {
 
 .container_advantages {}
 
+.menu-adv {
+  display: flex;
+  gap: 24px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.li_adv {
+  width: calc((100% - 72px) / 4)
+}
+
 .container_our_team {}
 
 .container_our_portfolio {}
@@ -174,6 +185,12 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.visually-hidden {
+  position: absolute;
+
 }
 
 .p_advantages {
