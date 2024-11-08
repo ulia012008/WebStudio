@@ -1,19 +1,14 @@
 .container {
-  background-size: cover;
+  width: 1158px;
+
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 body {
   color: #434455;
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
-  width: 1440px;
-  height: 3300px;
-
-  margin-left: 156px;
-  margin-right: 156px;
-  margin-top: 24px;
-  margin-bottom: 100px;
-  max-width: 100%;
 }
 
 a {
@@ -30,8 +25,8 @@ a:focus {
 
 ul {
   list-style: none;
-  padding-left: 0;
-  margin: auto;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -39,6 +34,7 @@ h2,
 h3,
 p {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .header {
@@ -47,7 +43,6 @@ p {
 
 .container_header {
   display: flex;
-  width: 1158px;
   text-align: center;
   height: 72px;
   margin: 0 auto;
@@ -89,31 +84,33 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
 }
 
 .adress_all {
   font-style: normal;
   padding-top: 24px;
   padding-bottom: 24px;
+
 }
 
 .address {
+
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+
 }
 
 .face {
   background-color: #2e2f42;
-}
-
-.container_face {
-  margin: auto;
   padding-top: 188px;
   padding-bottom: 188px;
+
 }
+
 
 .name {
   max-width: 496px;
@@ -123,14 +120,14 @@ p {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin: auto;
+  margin-bottom: 48px;
 }
 
 .button {
-  height: 56px;
+  font-family: "Roboto", sans-serif;
   border: none;
   border-radius: 4px;
   background-color: #4D5AE5;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -138,8 +135,9 @@ p {
   color: #ffffff;
   cursor: pointer;
   min-width: 169px;
+  min-height: 56px;
   display: block;
-  margin: 48px 635px;
+  margin: 0 auto;
 }
 
 button:hover {
@@ -153,6 +151,7 @@ button:focus {
 .adv {
   padding-top: 120px;
   padding-bottom: 120px;
+
 }
 
 
@@ -165,7 +164,7 @@ button:focus {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  clip-path: inset(50%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -175,10 +174,12 @@ button:focus {
   gap: 24px;
   padding-top: 120px;
   padding-bottom: 120px;
+
 }
 
 .li_adv {
   width: calc((1440 - 384px) / 4);
+
 }
 
 .advantages {
@@ -188,7 +189,7 @@ button:focus {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  text-align: center;
+
 }
 
 .p_advantages {
@@ -196,7 +197,7 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: center;
+
 }
 
 .our_team {
@@ -220,6 +221,7 @@ button:focus {
 .list_our_team {
   display: flex;
   gap: 24px;
+  text-align: center;
 }
 
 .list {
@@ -234,17 +236,20 @@ button:focus {
   padding-bottom: 32px;
 }
 
-img {
-  display: block;
-}
 
 .images {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .our_portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.container_our_portfolio {
+  width: 1128px;
 }
 
 .list_portfolio {
@@ -256,12 +261,14 @@ img {
 
 .project_card {
   width: calc((100% - 48px) / 3);
+
 }
 
 .card_content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+
 }
 
 .footer {
