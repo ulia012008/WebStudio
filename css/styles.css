@@ -158,8 +158,6 @@ button:focus {
 
 }
 
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -168,9 +166,18 @@ button:focus {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(50%);
   clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   overflow: hidden;
+}
+
+.team {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .menu-adv {
