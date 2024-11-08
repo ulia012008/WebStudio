@@ -1,4 +1,5 @@
 .container {
+
   width: 1158px;
 
   padding: 0 16px;
@@ -216,10 +217,6 @@ button:focus {
   padding-bottom: 120px;
 }
 
-
-
-
-
 .list_our_team {
   display: flex;
   gap: 24px;
@@ -262,6 +259,7 @@ button:focus {
 }
 
 .project_card {
+  display: block;
   width: calc((100% - 48px) / 3);
 }
 
