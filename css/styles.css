@@ -113,8 +113,14 @@ img {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: url(/images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto auto;
+  background-size: cover;
 
 }
+
 
 
 .name {
@@ -184,13 +190,22 @@ button:focus {
 .menu-adv {
   display: flex;
   gap: 24px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+
 
 }
 
 .li_adv {
   width: calc((100% - 72px) / 4);
+}
+
+.Feature {
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  background: #F4F4FD;
+  padding: 24px 100px;
+  margin-bottom: 8px;
 }
 
 .advantages {
