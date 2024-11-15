@@ -199,11 +199,11 @@ button:focus {
 }
 
 .Feature {
-  width: 264px;
-  height: 112px;
+
   border: 1px solid #8E8F99;
   border-radius: 4px;
   background: #F4F4FD;
+
   padding: 24px 100px;
   margin-bottom: 8px;
 }
@@ -224,6 +224,13 @@ button:focus {
   letter-spacing: 0.02em;
   color: #434455;
 
+}
+
+.traling_icons {
+  display: flex;
+  gap: 24px;
+  border-color: #4D5AE5;
+  border-radius: 50%;
 }
 
 .our_team {
