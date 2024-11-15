@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
 
   width: 1158px;
@@ -53,6 +59,7 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .navigation {
@@ -81,6 +88,15 @@ img {
   gap: 40px;
 }
 
+
+.nav-menu::before {
+  color: #404BBF;
+}
+
+.nav-menu::after {
+  color: #2e2f42;
+}
+
 .nav-menu {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -89,8 +105,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-
+  position: relative;
 }
+
+
+
 
 .adress_all {
   font-style: normal;
