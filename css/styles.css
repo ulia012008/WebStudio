@@ -94,6 +94,7 @@ img {
 
 
 .nav-menu {
+
   position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -101,17 +102,25 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404BBF;
+  color: #2e2f42;
   transition: cubic-bezier(0.4, 0, 0.2, 1) color 250ms;
 }
 
-
-.nav-menu:after {
-  color: #2e2f42;
+.nav-menu::before {
   width: 100%;
   position: absolute;
   left: 0;
-  content: "";
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
+.nav-menu::after {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  content: "Sudio";
   bottom: -1px;
   height: 4px;
   background-color: #404bbf;
