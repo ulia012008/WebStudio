@@ -102,7 +102,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: #404bbf;
   transition: cubic-bezier(0.4, 0, 0.2, 1) color 250ms;
 }
 
@@ -120,7 +120,7 @@ img {
   width: 100%;
   position: absolute;
   left: 0;
-  content: "Sudio";
+  content: "";
   bottom: -1px;
   height: 4px;
   background-color: #404bbf;
@@ -185,7 +185,7 @@ img {
   min-height: 56px;
   display: block;
   margin: 0 auto;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) color 250ms;
 }
 
 button:hover {
