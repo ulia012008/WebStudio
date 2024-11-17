@@ -50,6 +50,9 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container_header {
@@ -59,7 +62,6 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .navigation {
@@ -317,7 +319,9 @@ button:focus {
 
 }
 
-.traling_icons {}
+.traling_icons {
+  fill: #F4F4FD;
+}
 
 .our_portfolio {
   padding-top: 120px;
