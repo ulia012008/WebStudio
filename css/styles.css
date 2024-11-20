@@ -296,7 +296,7 @@ button:focus {
 }
 
 
-.image_container {
+.box {
   width: 360px;
   height: 300px;
   position: relative;
@@ -304,13 +304,14 @@ button:focus {
 
 }
 
-.image_container img {
+.box img {
   display: block;
   width: 100%;
   height: 100%;
+
 }
 
-.image_container:hover .overlay {
+.box:hover .overlay {
   transform: translateY(0%);
 
   opacity: 1;
@@ -394,8 +395,12 @@ button:focus {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project_card:hover .overlay {
+.image {}
+
+.project_card:hover {
   transform: translateY(0%);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
 }
 
 
