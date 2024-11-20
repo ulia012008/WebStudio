@@ -337,7 +337,7 @@ button:focus {
   padding: 12px 12px 12px 12px;
 }
 
-.link {
+.link_section {
   display: flex;
   width: 100%;
   height: 100%;
@@ -348,11 +348,12 @@ button:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover {
+
+.link_section:hover {
   background-color: #404bbf;
 }
 
-.link:focus {
+.link_section:focus {
   background-color: #404bbf;
 }
 
@@ -480,7 +481,13 @@ button:focus {
   max-width: 264px;
 }
 
-.link {
+.link_footer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+  align-items: center;
+  justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
