@@ -329,12 +329,7 @@ button:focus {
 .ellipse {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-color: #4D5AE5;
-  align-items: center;
-  justify-content: center;
-  margin-top: 8px;
-  padding: 12px 12px 12px 12px;
+
 }
 
 .link_section {
