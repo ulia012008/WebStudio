@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+
+Fonts custom properties Copy:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
 .container {
 
   width: 1158px;
@@ -537,4 +557,68 @@ button:focus {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: left;
+}
+
+.form {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #212121;
+  padding: 8px;
+}
+
+
+
+.form_input:focus-within {
+  border: 1px solid #4d5ae5;
+
+}
+
+
+
+.form_input {
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+
+}
+
+.input::placeholder {
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: var(--navy-blue-modal);
+}
+
+.button_form {
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  align-self: flex-start;
 }
