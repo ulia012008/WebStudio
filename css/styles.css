@@ -763,6 +763,7 @@ button:focus {
 .exit:focus {
   background-color: #404bbf;
   border: none;
+  fill: #FFFFFF;
 }
 
 .icon_exit {
@@ -770,13 +771,6 @@ button:focus {
 }
 
 
-.exit:hover .icon_exit {
-  fill: #FFF;
-}
-
-.exit:focus .icon_exit {
-  fill: #FFF;
-}
 
 .box_model {
   margin-bottom: 8px;
@@ -814,9 +808,11 @@ button:focus {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 
 }
 
+.textarea:hover,
 .textarea:focus {
   border-color: #4D5AE5;
 }
@@ -837,19 +833,6 @@ button:focus {
 
 
 
-
-
-.input_checkbox:checked+.label_checkbox .custom_checkbox {
-  background-color: #404bbf;
-  border: none;
-  color: #f4f4fd;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-
-.input_checkbox:checked+.label_checkbox .icon_check {
-  fill: #f4f4fd;
-}
 
 .a_checkbox {
   color: #4d5ae5;
@@ -881,6 +864,7 @@ button:focus {
   gap: 5px;
   cursor: pointer;
   color: #4D5AE5;
+  display: inline-flex;
 }
 
 .box_comment {
@@ -900,19 +884,8 @@ button:focus {
   display: none;
 }
 
-.input_checkbox:checked+.label_checkbox .custom_checkbox .icon_check {
-  display: inline-block;
-  fill: #f4f4fd;
-}
-
-.input_checkbox:checked+.label_checkbox .custom_checkbox {
-  background-color: var(--checkbox-checked-color, #404bbf);
-
-  border: none;
-}
-
-.input_checkbox:checked+.label_checkbox .custom_checkbox:hover,
-.input_checkbox:checked+.label_checkbox .custom_checkbox:focus {
+.input_checkbox:checked .custom_checkbox {
   background-color: #404bbf;
   border: none;
+  fill: #F4F4FD;
 }
