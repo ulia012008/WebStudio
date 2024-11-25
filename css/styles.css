@@ -566,21 +566,6 @@ button:focus {
   text-align: left;
 }
 
-
-
-
-
-.p_subscribe {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-}
-
-
-
 .form {
   display: flex;
   width: 408px;
@@ -595,10 +580,7 @@ button:focus {
   flex-grow: 1;
 }
 
-.form_start {
-  gap: 24px;
-  display: flex;
-}
+
 
 .subscribe-mail {
   width: 264px;
@@ -728,14 +710,16 @@ button:focus {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
-  padding: 72px 24px 24px 24px;
+
   visibility: hidden;
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-overlay .is-open {
   opacity: 1;
+  pointer-events: auto;
   visibility: visible;
 }
 
@@ -763,7 +747,6 @@ button:focus {
   position: absolute;
   top: 24px;
   right: 24px;
-
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -788,11 +771,11 @@ button:focus {
 
 
 .exit:hover .icon_exit {
-  fill: #FFFFFF;
+  fill: #FFF;
 }
 
 .exit:focus .icon_exit {
-  fill: #FFFFFF;
+  fill: #FFF;
 }
 
 .box_model {
@@ -855,39 +838,8 @@ button:focus {
 
 
 
-.privacy {
-  color: #4D5AE5;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-  gap: 5px;
-  cursor: pointer;
-  display: inline-flex;
-}
 
-.box_comment {
-  margin-bottom: 16px;
-}
-
-.visually-hidden {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.svg_privacy {
-  fill: transparent;
-  stroke: rgba(46, 47, 66, 0.4);
-  transition: fill 250ms ease, stroke 250ms ease;
-
-}
-
-.input_checkbox:checked+.label_checkbox .privacy {
+.input_checkbox:checked+.label_checkbox .custom_checkbox {
   background-color: #404bbf;
   border: none;
   color: #f4f4fd;
@@ -895,9 +847,8 @@ button:focus {
   border-radius: 4px;
 }
 
-.input_checkbox:checked+.label_checkbox .svg_privacy {
+.input_checkbox:checked+.label_checkbox .icon_check {
   fill: #f4f4fd;
-
 }
 
 .a_checkbox {
@@ -925,10 +876,27 @@ button:focus {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+  gap: 5px;
+  cursor: pointer;
+  color: #4D5AE5;
+}
+
+.box_comment {
+  margin-bottom: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .icon_check {
+  fill: transparent;
+  stroke: rgba(46, 47, 66, 0.4);
+  transition: fill 250ms ease, stroke 250ms ease;
   display: none;
 }
 
