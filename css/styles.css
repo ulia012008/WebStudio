@@ -566,19 +566,6 @@ button:focus {
   text-align: left;
 }
 
-.form {
-  display: flex;
-  width: 408px;
-  height: 584px;
-  gap: 24px;
-  flex-direction: column;
-  border: 1px solid #212121;
-  padding: 8px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background: #FCFCFC;
-  justify-content: space-between;
-  flex-grow: 1;
-}
 
 .form_footer {
   display: flex;
@@ -668,6 +655,7 @@ button:focus {
 }
 
 .button_form {
+  display: block;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
@@ -681,10 +669,10 @@ button:focus {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-  align-self: center;
   cursor: pointer;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
 
 .button_subscribe {
@@ -711,20 +699,16 @@ button:focus {
 
 
 .modal-overlay {
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 999;
-  justify-content: center;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: center;
   opacity: 1;
   pointer-events: none;
-
 }
 
 .modal-overlay .is-open {
@@ -733,22 +717,21 @@ button:focus {
 }
 
 .modal {
-  display: flex;
-  flex-direction: column;
+
   position: absolute;
   top: 50%;
-  color: #404bbf;
+  left: 50%;
   background-color: #FCFCFC;
   border-radius: 4px;
-  min-width: 408px;
+  width: 408px;
   min-height: 584px;
-  border: none;
+
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   overflow-y: auto;
-  left: 50%;
+
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  justify-content: center;
+
   padding: 72px 24px 24px 24px;
 }
 
