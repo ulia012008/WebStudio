@@ -853,7 +853,7 @@ button:focus {
 
 
 .custom_checkbox {
-  display: inline-flex;
+
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -872,6 +872,8 @@ button:focus {
 .box_comment {
   margin-bottom: 16px;
 }
+
+
 
 .input_checkbox:checked+.label_checkbox>.custom_checkbox {
   background-color: #404bbf;
