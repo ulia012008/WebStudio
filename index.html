@@ -442,9 +442,9 @@ for Your Business" />
         </svg></button>
       <p class="p_form">Leave your contacts and we will call you back</p>
       <form class="form" name="feedback" autocomplete="off" novalidate>
-        <div classe="box_model">
+        <div class="box_model">
           <label class="form-label" for="user-name">Name</label>
-          <div class="box_input"><input class="form_input" id="user-name" type="text" name="user-name" autofocus />
+          <div class="box_input"><input class="form_input" id="user-name" type="text" name="user-name" />
             <svg class="icons_box" width="18" height="24">
               <use href="./images/icons.svg#icon-human"></use>
             </svg>
@@ -452,31 +452,34 @@ for Your Business" />
         </div>
 
 
-        <div classe="box_model">
+        <div class="box_model">
           <label class="form-label" for="phone">Phone</label>
-          <div class="box_input"><input class="form_input" id="phone" type="text" name="Phone" autofocus /><svg
-              class="icons_box" width="18" height="24">
+          <div class="box_input"><input class="form_input" id="phone" type="text" name="Phone" /><svg class="icons_box"
+              width="18" height="24">
               <use href="./images/icons.svg#icon-phoneblack"></use>
             </svg></div>
         </div>
 
-        <div classe="box_model">
+        <div class="box_model">
           <label class="form-label" for="e-mail">Email</label>
-          <div class="box_input"><input class="form_input" id="e-mail" type="text" name="e-mail" autofocus /><svg
+          <div class="box_input"><input class="form_input" id="e-mail" type="text" name="e-mail" /><svg
               class="icons_box" width="18" height="24">
               <use href="./images/icons.svg#icon-emailblack"></use>
             </svg></div>
         </div>
 
-        <div classe="box_model"><label class="form-label" for="user-comment">Comment</label>
+        <div class="box_comment">
+          <label class="form-label" for="user-comment">Comment</label>
           <textarea class="textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
         </div>
 
         <div class="checkbox">
           <input class="input_checkbox visually-hidden" id="user-privacy" type="checkbox" value="true"
             name="user-privacy" />
-          <label class="label_checkbox" for="user-privacy">I accept the terms and conditions of the<span
-              class="privacy">Privacy Policy</span></label>
+          <label class="label_checkbox" for="user-privacy"><svg class="svg_privacy" width="10" height="8">
+              <use href="./images/icons.svg#icon-Checkbox"></use>
+            </svg>I accept the terms and conditions of the<span class="privacy">Privacy Policy</span>
+            <a href="" class="a_checkbox">Privacy Policy</a></label>
 
         </div>
 
