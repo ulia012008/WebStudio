@@ -820,12 +820,12 @@ button:focus {
 }
 
 .checkbox {
-  display: flex;
+
   margin-bottom: 24px;
 }
 
 .label_checkbox {
-  display: flex;
+
   font-size: 12px;
   line-height: 1.17;
   gap: 8px;
