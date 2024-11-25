@@ -426,7 +426,8 @@ for Your Business" />
         <form class="form_start"><label class="label_footer"><input class="subscribe-mail" type="email" name="email"
               placeholder="E-mail" autofocus />
           </label>
-          <button class="button_subscribe" type="submit">Subscribe<svg class="svg_subscribe" width="24" height="24">
+          <button class="button_subscribe open-modal-btn" type="submit">Subscribe<svg class="svg_subscribe" width="24"
+              height="24">
               <use href="./images/icons.svg#icon-Frame"></use>
             </svg></button>
         </form>
@@ -437,7 +438,7 @@ for Your Business" />
 
 
   </footer>
-  <div class="modal-overlay">
+  <div class="modal-overlay is-open">
     <div class="modal">
       <button class="exit" type="button"><svg class="icon_exit" width="8" height="8">
           <use href="./images/icons.svg#icon-closeblack"></use>
@@ -478,18 +479,56 @@ for Your Business" />
         <div class="checkbox">
           <input class="input_checkbox visually-hidden" id="user-privacy" type="checkbox" value="true"
             name="user-privacy" />
-          <label class="label_checkbox" for="user-privacy">I accept the terms and conditions of the<span
-              class="privacy"><svg class="svg_privacy" width="10" height="8">
+          <label class="label_checkbox" for="user-privacy">
+            <span class="custom_checkbox">
+              <svg class="icon_check" width="10" height="8">
                 <use href="./images/icons.svg#icon-Checkbox"></use>
-              </svg></span>
-            <a href="" class="a_checkbox">Privacy Policy</a></label>
+              </svg>
+            </span>
+            I accept the terms and conditions
+            <a href="" class="a_checkbox">Privacy Policy</a>
+          </label>
         </div>
+
+
+
+
+
+
 
         <button class="button_form" type="submit">Send</button>
       </form>
     </div>
   </div>
 
+
+
+
+
+
+  <script>
+    // Отримуємо елементи
+    const openModalBtn = document.querySelector('.open-modal-btn');
+    const modalOverlay = document.querySelector('.modal-overlay');
+    const closeModalBtn = document.querySelector('.exit');
+
+    // Відкриваємо модальне вікно
+    openModalBtn.addEventListener('click', () => {
+      modalOverlay.classList.add('is-open');
+    });
+
+    // Закриваємо модальне вікно
+    closeModalBtn.addEventListener('click', () => {
+      modalOverlay.classList.remove('is-open');
+    });
+
+    // Закрити модальне вікно, якщо клікнути за межами модального вікна
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) {
+        modalOverlay.classList.remove('is-open');
+      }
+    });
+  </script>
 </body>
 
 </html>
