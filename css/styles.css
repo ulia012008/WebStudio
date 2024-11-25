@@ -580,6 +580,19 @@ button:focus {
   flex-grow: 1;
 }
 
+.form_footer {
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: #2e2f42;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  justify-content: space-between;
+  flex-grow: 1;
+}
 
 
 .subscribe-mail {
@@ -612,10 +625,6 @@ button:focus {
   margin-bottom: 16px;
 }
 
-.form_input:focus-within {
-  border: 1px solid #4d5ae5;
-
-}
 
 
 
@@ -635,6 +644,10 @@ button:focus {
 
 }
 
+.form_input:focus-within {
+  border: 1px solid #4d5ae5;
+}
+
 .form-label {
   display: block;
   margin-bottom: 4px;
@@ -646,7 +659,6 @@ button:focus {
 }
 
 .input::placeholder {
-
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
@@ -713,13 +725,10 @@ button:focus {
   opacity: 1;
   pointer-events: none;
 
-  visibility: hidden;
-  padding: 72px 24px 24px 24px;
 }
 
 .modal-overlay .is-open {
   opacity: 1;
-  pointer-events: auto;
   visibility: visible;
 }
 
@@ -731,15 +740,16 @@ button:focus {
   color: #404bbf;
   background-color: #FCFCFC;
   border-radius: 4px;
-  width: 408px;
+  min-width: 408px;
   min-height: 584px;
-  max-height: 80%;
+  border: none;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   overflow-y: auto;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
+  padding: 72px 24px 24px 24px;
 }
 
 .exit {
@@ -757,6 +767,7 @@ button:focus {
   padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
 }
 
 .exit:hover,

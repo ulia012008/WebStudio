@@ -423,7 +423,7 @@ for Your Business" />
       </div>
       <div class="social">
         <p class="social-media">Subscribe</p>
-        <form class="form"><label class="label_footer"><input class="subscribe-mail" type="email" name="email"
+        <form class="form_footer"><label class="label_footer"><input class="subscribe-mail" type="email" name="email"
               placeholder="E-mail" autofocus />
           </label>
           <button class="button_subscribe open-modal-btn" type="submit">Subscribe<svg class="svg_subscribe" width="24"
@@ -505,30 +505,6 @@ for Your Business" />
 
 
 
-
-  <script>
-    // Отримуємо елементи
-    const openModalBtn = document.querySelector('.open-modal-btn');
-    const modalOverlay = document.querySelector('.modal-overlay');
-    const closeModalBtn = document.querySelector('.exit');
-
-    // Відкриваємо модальне вікно
-    openModalBtn.addEventListener('click', () => {
-      modalOverlay.classList.add('is-open');
-    });
-
-    // Закриваємо модальне вікно
-    closeModalBtn.addEventListener('click', () => {
-      modalOverlay.classList.remove('is-open');
-    });
-
-    // Закрити модальне вікно, якщо клікнути за межами модального вікна
-    modalOverlay.addEventListener('click', (e) => {
-      if (e.target === modalOverlay) {
-        modalOverlay.classList.remove('is-open');
-      }
-    });
-  </script>
 </body>
 
 </html>
