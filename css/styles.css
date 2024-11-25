@@ -854,19 +854,15 @@ button:focus {
 
 .custom_checkbox {
 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: transparent;
-  gap: 5px;
-  cursor: pointer;
-  color: #4D5AE5;
-  display: inline-flex;
 }
 
 .box_comment {
