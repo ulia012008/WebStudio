@@ -25,9 +25,7 @@ Fonts custom properties Copy:root {
 }
 
 .container {
-
   width: 1158px;
-
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -50,10 +48,11 @@ a:focus {
   color: #404bbf;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+ul,
+ol {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -66,6 +65,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -209,6 +210,8 @@ img {
   margin: 0 auto;
   transition: cubic-bezier(0.4, 0, 0.2, 1) color 250ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
 button:hover {
@@ -691,6 +694,8 @@ button:focus {
   background-color: #4D5AE5;
   border: none;
   border-radius: 4px;
+
+
 }
 
 .svg_subscribe {
@@ -707,7 +712,7 @@ button:focus {
   z-index: 1000;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1;
+  opacity: 0;
   pointer-events: auto;
 }
 
@@ -728,10 +733,8 @@ button:focus {
   z-index: 1001;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   overflow-y: auto;
-
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   padding: 72px 24px 24px 24px;
 }
 
