@@ -723,12 +723,12 @@ button:focus {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 .modal-overlay .is-open {
   opacity: 1;
-  visibility: visible;
+
   pointer-events: auto;
 }
 
@@ -746,8 +746,7 @@ button:focus {
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
-  pointer-events: none;
-  opacity: 0;
+
 }
 
 .exit {
