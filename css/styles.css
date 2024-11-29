@@ -59,6 +59,10 @@ p {
   margin: 0;
 }
 
+.none {
+  display: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -74,9 +78,22 @@ img {
 }
 
 .container {
-  width: 100%;
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
+}
+
+@media only screen and (min-width:768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width:1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 .container_header {
@@ -92,6 +109,18 @@ img {
   display: flex;
   align-items: center;
   margin-right: 149px;
+}
+
+.menu {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
 }
 
 
