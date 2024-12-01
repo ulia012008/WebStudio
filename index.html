@@ -23,26 +23,14 @@
       <nav class="navigation">
 
         <a class="logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
-        <button type="button"><svg class="icon_group" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M3.59961 6.00078C3.59961 5.68252 3.72604 5.3773 3.95108 5.15225C4.17612 4.92721 4.48135 4.80078 4.79961 4.80078H19.1996C19.5179 4.80078 19.8231 4.92721 20.0481 5.15225C20.2732 5.3773 20.3996 5.68252 20.3996 6.00078C20.3996 6.31904 20.2732 6.62427 20.0481 6.84931C19.8231 7.07435 19.5179 7.20078 19.1996 7.20078H4.79961C4.48135 7.20078 4.17612 7.07435 3.95108 6.84931C3.72604 6.62427 3.59961 6.31904 3.59961 6.00078Z"
-              fill="#2F2F37" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M3.59961 12.0008C3.59961 11.6825 3.72604 11.3773 3.95108 11.1523C4.17612 10.9272 4.48135 10.8008 4.79961 10.8008H19.1996C19.5179 10.8008 19.8231 10.9272 20.0481 11.1523C20.2732 11.3773 20.3996 11.6825 20.3996 12.0008C20.3996 12.319 20.2732 12.6243 20.0481 12.8493C19.8231 13.0744 19.5179 13.2008 19.1996 13.2008H4.79961C4.48135 13.2008 4.17612 13.0744 3.95108 12.8493C3.72604 12.6243 3.59961 12.319 3.59961 12.0008Z"
-              fill="#2F2F37" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M3.59961 18.0008C3.59961 17.6825 3.72604 17.3773 3.95108 17.1523C4.17612 16.9272 4.48135 16.8008 4.79961 16.8008H19.1996C19.5179 16.8008 19.8231 16.9272 20.0481 17.1523C20.2732 17.3773 20.3996 17.6825 20.3996 18.0008C20.3996 18.319 20.2732 18.6243 20.0481 18.8493C19.8231 19.0744 19.5179 19.2008 19.1996 19.2008H4.79961C4.48135 19.2008 4.17612 19.0744 3.95108 18.8493C3.72604 18.6243 3.59961 18.319 3.59961 18.0008Z"
-              fill="#2F2F37" />
-          </svg></button>
-        <ul class="menu">
+        <ul class="menu_list">
           <li><a class="nav-menu nav-menu-blue" href="./index.html" target="_blank">Studio</a></li>
           <li><a class="nav-menu" href="" target="_blank">Portfolio</a></li>
           <li><a class="nav-menu" href="" target="_blank">Contacts</a></li>
         </ul>
       </nav>
       <address class="adress_all">
-        <ul class="menu">
+        <ul class="menu_address">
           <li>
             <a class="address" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -51,19 +39,88 @@
           </li>
         </ul>
       </address>
+      <button class="burger_btn" type="button"><svg class="icon_menu" width="24" height="24">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg></button>
+    </div>
+    <div class="mobile_menu">
+      <div class="container mobile_container">
+        <button class="exit" type="button"><svg class="icon_exit" width="8" height="8">
+            <use href="./images/icons.svg#icon-closeblack"></use>
+          </svg></button>
+        <nav class="nav_mobile">
+          <ul class="list_mobile">
+            <li class="element_list_mobile">
+              <a class="" href="./index.html" target="_blank">Studio</a>
+            </li>
+            <li class="element_list_mobile">
+              <a class="" href="" target="_blank">Portfolio</a>
+            </li>
+            <li class="element_list_mobile">
+              <a class="" href="" target="_blank">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="menu_address">
+            <li>
+              <a class="address" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="address" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+        <ul class="list_icons">
+          <li class="ellipse">
+            <a class="link_section" href="https://www.instagram.com" target="_blank"> <svg class="traling_icons"
+                width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram">
+                </use>
+              </svg>
+            </a>
 
+          </li>
+          <li class="ellipse">
+            <a class="link_section" href="https://twitter.com" target="_blank"><svg class="traling_icons" width="16"
+                height="16">
+                <use href="./images/icons.svg#icon-twitter">
+                </use>
+              </svg>
+            </a>
+
+          </li>
+          <li class="ellipse">
+            <a class="link_section" href="https://facebook.com" target="_blank">
+              <svg class="traling_icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook">
+                </use>
+              </svg></a>
+
+          </li>
+          <li class="ellipse">
+            <a class="link_section" href="https://www.linkedin.com" target="_blank"><svg class="traling_icons"
+                width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin">
+                </use>
+              </svg></a>
+
+          </li>
+        </ul>
+
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="face">
+    <section class="face hidden">
       <div class="container">
         <h1 class="name">Effective Solutions for Your Business</h1>
         <button class="button" type="button">Order Service</button>
       </div>
     </section>
 
-    <section class="adv">
+    <section class="adv hidden">
       <div class="container container_adv">
         <h2 class="visually-hidden">Advantages</h2>
         <ul class="menu-adv">
@@ -98,7 +155,7 @@
         </ul>
       </div>
     </section>
-    <section class="none our_team">
+    <section class="our_team hidden">
       <div class="container">
         <h2 class="team">Our Team</h2>
         <ul class="list_our_team">
@@ -279,7 +336,7 @@
         </ul>
       </div>
     </section>
-    <section class="none our_portfolio">
+    <section class="our_portfolio hidden">
       <div class="container">
         <h2 class="team">Our Portfolio</h2>
         <ul class="list_portfolio">
@@ -369,7 +426,7 @@
 
   </main>
 
-  <footer class="none footer">
+  <footer class="footer hidden">
     <div class="container footer-container">
       <div class="text">
         <a class="logo_f" href="./index.html">Web<span class="logo-footer">Studio</span></a>
@@ -432,7 +489,7 @@
 
 
   </footer>
-  <div class="modal-overlay is-open">
+  <div class="hidden modal-overlay is-open">
     <div class="modal">
       <button class="exit" type="button"><svg class="icon_exit" width="8" height="8">
           <use href="./images/icons.svg#icon-closeblack"></use>
