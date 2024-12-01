@@ -597,7 +597,7 @@ button {
   padding: 96px 0;
 }
 
-.container-our-team {}
+
 
 .team {
   font-weight: 700;
@@ -615,6 +615,7 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   gap: 72px;
+
 }
 
 .list {
@@ -663,6 +664,11 @@ button {
   .list {
     flex: 1 1 calc(50% - 24px);
   }
+
+  .list_our_team {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -680,4 +686,133 @@ button {
   .list {
     flex: 1 1 calc(25% - 24px);
   }
+}
+
+/*portfolio*/
+.our_portfolio {
+  padding: 96px 0;
+}
+
+.list_portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: var(--white);
+}
+
+.list_portfolio .project_card {
+  flex: 1 1 100%;
+}
+
+.project_card {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project_card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.project_card:hover .overlay {
+  transform: translateY(0%);
+}
+
+.image_container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.image_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card_content {
+  position: relative;
+  border-top: none;
+  text-align: left;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.project-title {
+  text-align: left;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.project-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .container_our_portfolio {
+    max-width: 736px;
+  }
+
+  .image_container {
+
+    column-gap: 72px;
+    row-gap: 24px;
+    flex: 1 1 calc(50% - 24px);
+  }
+
+  .list_portfolio .project_card {
+    flex: 1 1 calc(50% - 24px);
+    column-gap: 72px;
+    row-gap: 24px;
+  }
+
+}
+
+@media screen and (min-width: 1158px) {
+  .our_portfolio {
+    padding: 120px 0;
+  }
+
+  .container_our_portfolio {
+    max-width: 1128px;
+    align-items: center;
+  }
+
+  .list_portfolio .project_card {
+    flex: 1 1 calc(33.33% - 24px);
+  }
+
+  .list_portfolio {
+    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
 }
