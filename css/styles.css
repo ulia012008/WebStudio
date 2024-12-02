@@ -625,6 +625,7 @@ button {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
 }
 
 .list img {
@@ -956,7 +957,7 @@ button {
 
 
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .footer {
     text-align: left;
   }
@@ -965,11 +966,20 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding-left: 108px;
+    gap: 0;
   }
 
-  .text,
-  .social {
+  .text {
     max-width: 264px;
+  }
+
+  .social {
+    max-width: 208px;
+  }
+
+  .text {
+    margin-right: 24px;
   }
 
   .footer-container .text,
@@ -980,6 +990,10 @@ button {
     column-gap: 72px;
     row-gap: 24px;
 
+  }
+
+  .subscribe {
+    margin: 0 auto
   }
 
   .subscribe-mail .button_subscribe {
@@ -1006,12 +1020,17 @@ button {
   }
 
   .footer-container {
-
+    padding: 0;
     flex-wrap: nowrap;
-    gap: 32px;
+    gap: 0;
     align-items: baseline;
+
   }
 
+  .text {
+
+    margin-right: 120px;
+  }
 
   .social {
     margin-right: 80px;
