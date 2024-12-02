@@ -828,18 +828,9 @@ button {
   align-items: center;
 }
 
-.text,
-.social,
-.subscribe {
-  max-width: 264px;
-}
 
-.text {
-  display: block;
-}
 
 .logo_f {
-
   display: inline-block;
   font-weight: 700;
   font-size: 18px;
@@ -864,8 +855,8 @@ button {
   letter-spacing: 0.02em;
   width: 264px;
   text-align: left;
-}
 
+}
 
 
 .social-media {
@@ -880,7 +871,6 @@ button {
 .footer-ul {
   display: flex;
   gap: 16px;
-
   list-style: none;
   padding: 0;
 }
@@ -906,7 +896,7 @@ button {
   gap: 24px;
 
   border-radius: 4px;
-  width: 264px;
+
   min-height: 40px;
   background-color: #2e2f42;
   justify-content: space-between;
@@ -917,7 +907,7 @@ button {
 .label_footer {}
 
 .subscribe-mail {
-  width: 264px;
+  min-width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -939,10 +929,8 @@ button {
 
 .button_subscribe {
   display: flex;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  justify-content: center;
-  align-items: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -977,44 +965,37 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-
   }
 
   .text,
+  .social {
+    max-width: 264px;
+  }
+
+  .footer-container .text,
   .social,
-  .subscribe,
-  .button_subscribe {
+  .subscribe {
+    flex-direction: row;
     flex: 1 1 calc(50% - 24px);
-    row-gap: 72px;
-    column-gap: 24px;
+    column-gap: 72px;
+    row-gap: 24px;
+
+  }
+
+  .subscribe-mail .button_subscribe {
+    justify-content: flex-start;
   }
 
 
-  .text p,
-  .social p,
-  .subscribe p {
-    text-align: left;
-    align-items: flex-start;
-  }
+
 
   .form_footer {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 16px;
+    gap: 24px;
     justify-content: flex-start;
     width: 100%;
   }
 
-  .subscribe-mail {
-    flex: 1;
-    min-width: 264px;
-  }
-
-  .button_subscribe {
-    flex-shrink: 0;
-
-  }
 
 
 }
@@ -1026,25 +1007,14 @@ button {
 
   .footer-container {
 
-    justify-content: space-between;
+    flex-wrap: nowrap;
     gap: 32px;
     align-items: baseline;
   }
-
-  .text,
-  .social,
-  .subscribe {
-    flex: 1;
-  }
-
 
 
   .social {
     margin-right: 80px;
   }
 
-  .footer-ul,
-  .logo_f {
-    justify-content: flex-start;
-  }
 }
