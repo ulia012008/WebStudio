@@ -38,13 +38,13 @@
           </li>
         </ul>
       </address>
-      <button class="burger_btn" type="button"><svg class="icon_menu" width="24" height="24">
+      <button class="burger_btn" data-mobile-open type="button"><svg class="icon_menu" width="24" height="24">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg></button>
     </div>
-    <div class="mobile_menu">
+    <div class="mobile_menu" data-mobile>
       <div class="container mobile_container">
-        <button class="exit" type="button"><svg class="icon_exit" width="8" height="8">
+        <button class="exit" data-mobile-close type="button"><svg class="icon_exit" width="8" height="8">
             <use href="./images/icons.svg#icon-closeblack"></use>
           </svg></button>
         <nav class="nav_mobile">
@@ -505,7 +505,7 @@
         <form class="form_footer"><label class="label_footer"><input class="subscribe-mail" type="email" name="email"
               placeholder="E-mail" autofocus />
           </label>
-          <button class="button_subscribe open-modal-btn" type="submit">Subscribe<svg class="svg_subscribe" width="24"
+          <button class="button_subscribe" type="submit" open-modal-btn>Subscribe<svg class="svg_subscribe" width="24"
               height="24">
               <use href="./images/icons.svg#icon-Frame"></use>
             </svg></button>
@@ -514,9 +514,9 @@
     </div>
   </footer>
 
-  <div class="hidden modal-overlay is-open">
+  <div class="modal-overlay" data-modal>
     <div class="modal">
-      <button class="exit" type="button"><svg class="icon_exit" width="8" height="8">
+      <button class="exit_modal" type="button" data-modal-close><svg class="icon_exit" width="8" height="8">
           <use href="./images/icons.svg#icon-closeblack"></use>
         </svg></button>
       <p class="p_form">Leave your contacts and we will call you back</p>
@@ -566,9 +566,7 @@
           </label>
         </div>
 
-        <button class="send-btn" type="submit">Send<svg class="plane-icon" width="35" height="35">
-            <use href="./images/icons.svg#icon-Frame"></use>
-          </svg></button>
+        <button class="send-btn" type="submit">Send</button>
       </form>
     </div>
   </div>
@@ -576,7 +574,8 @@
 
 
 
-  <script src="./js/scripts.js"></script>
+  <script src="./js/mobile.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
