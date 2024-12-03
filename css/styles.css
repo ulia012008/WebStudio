@@ -314,6 +314,17 @@ button {
   margin-bottom: 8px;
 }
 
+.exit:hover,
+.exit:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.exit:hover svg,
+.exit:focus svg {
+  fill: #ffffff;
+}
+
 @media only screen and (min-width: 768px) {
   .exit {
     margin-bottom: 24px;
@@ -396,16 +407,7 @@ button {
     background-color: #e7e9fc;
   }
 
-  .exit:hover,
-  .exit:focus {
-    background-color: #404bbf;
-    border: none;
-  }
 
-  .exit:hover svg,
-  .exit:focus svg {
-    fill: #ffffff;
-  }
 
   .icon_exit {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1355,6 +1357,17 @@ button {
 
   .exit_modal {
     margin-bottom: 24px;
+  }
+
+  .exit_modal:hover,
+  .exit_modal:focus {
+    background-color: #404bbf;
+    border: none;
+  }
+
+  .exit_modal:hover svg,
+  .exit_modal:focus svg {
+    fill: #ffffff;
   }
 
   .checkbox {
