@@ -173,8 +173,8 @@
         <ul class="list_our_team">
           <div>
             <li class="list">
-              <img srcset="./images/mark.jpg 1x, ./images/mark@2x 2x" src="./images/mark.jpg" alt="card 1"
-                width="264" />
+              <img srcset="./images/mark.jpg, ./images/mark@2x.jpg 2x" src="./images/mark.jpg" alt="card 1" width="264"
+                height="260" />
               <div class="identify">
                 <h3 class="advantages">Mark Guerrero</h3>
                 <p class="p_advantages">Product Designer</p>
@@ -219,7 +219,8 @@
           </div>
           <div>
             <li class="list">
-              <img src="./images/tom.jpg" alt="card 2" width="264" height="260" />
+              <img srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x" src="./images/tom.jpg" alt="card 2" width="264"
+                height="260" />
               <div class="identify">
                 <h3 class="advantages">Tom Ford</h3>
                 <p class="p_advantages">Frontend Developer</p>
@@ -264,7 +265,8 @@
           </div>
           <div>
             <li class="list">
-              <img src="./images/camila.jpg" alt="card 3" width="264" height="260" />
+              <img srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x" src="./images/camila.jpg" alt="card 3"
+                width="264" height="260" />
               <div class="identify">
                 <h3 class="advantages">Camila Garcia</h3>
                 <p class="p_advantages">Marketing</p>
@@ -309,7 +311,8 @@
           </div>
           <div>
             <li class="list">
-              <img src="./images/daniel.jpg" alt="card 4" width="264" height="260" />
+              <img srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x" src="./images/daniel.jpg" alt="card 4"
+                width="264" height="260" />
               <div class="identify">
                 <h3 class="advantages">Daniel Wilson</h3>
                 <p class="p_advantages">UI Designer</p>
@@ -361,7 +364,8 @@
         <ul class="list_portfolio">
           <li class="project_card">
             <div class="image_container">
-              <img src="./images/img1.jpg" alt="Banking App design concepts" width="360" height="300" />
+              <img srcset="./images/banking@1x.jpg 1x, ./images/banking@2x.jpg 2x" src="./images/banking@1x.jpg"
+                alt="Banking App design concepts" width="360" height="300" />
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                 Fruit Ecommerce App · Cloud Storage App
@@ -374,7 +378,8 @@
           </li>
           <li class="project_card">
             <div class="image_container">
-              <img src="./images/img2.jpg" alt="Cashless Payment project" width="360" height="300" />
+              <img srcset="./images/cashless@1x.jpg 1x, ./images/cashless@2x.jpg 2x" src="./images/cashless@1x.jpg"
+                alt="Cashless Payment project" width="360" height="300" />
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                 App · Exotic Fruit Ecommerce App ·
                 Cloud Storage App</p>
@@ -387,7 +392,8 @@
           </li>
           <li class="project_card">
             <div class="image_container">
-              <img src="./images/img3.jpg" alt="Meditation App project" width="360" height="300" />
+              <img srcset="./images/mediation@1x.jpg 1x, ./images/meditation@2x.jpg 2x" src="./images/mediation@1x.jpg"
+                alt="Meditation App project" width="360" height="300" />
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                 App ·
                 Exotic
@@ -400,7 +406,8 @@
           </li>
           <li class="project_card">
             <div class="image_container">
-              <img src="./images/img4.jpg" alt="Taxi Service project" width="360" height="300" />
+              <img srcset="./images/taxi@1x.jpg 1x, ./images/taxi@2x.jpg 2x" src="./images/taxi@1x.jpg"
+                alt="Taxi Service project" width="360" height="300" />
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                 App ·
                 Exotic
@@ -414,7 +421,8 @@
           <li class="project_card">
 
             <div class="image_container">
-              <img src="./images/img5.jpg" alt="Screen Illustrations project" width="360" height="300" />
+              <img srcset="./images/screen@1x.jpg 1x, ./images/screen@2x.jpg 2x" src="./images/screen@1x.jpg"
+                alt="Screen Illustrations project" width="360" height="300" />
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                 App ·
                 Exotic
@@ -428,7 +436,8 @@
           </li>
           <li class="project_card">
             <div class="image_container">
-              <img src="./images/img6.jpg" alt="Online Courses project" width="360" height="300" />
+              <img srcset="./images/online@1x.jpg, ./images/online@2x.jpg 2x" src="./images/online@1x.jpg"
+                alt="Online Courses project" width="360" height="300" />
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                 App ·
                 Exotic
@@ -503,11 +512,8 @@
         </form>
       </div>
     </div>
-
-
-
-
   </footer>
+
   <div class="hidden modal-overlay is-open">
     <div class="modal">
       <button class="exit" type="button"><svg class="icon_exit" width="8" height="8">
@@ -556,13 +562,9 @@
               Policy</a></label>
         </div>
 
-
-
-
-
-
-
-        <button class="button_form" type="submit">Send</button>
+        <button class="send-btn" type="submit">Send<svg class="plane-icon" width="35" height="35">
+            <use href="./images/icons.svg#icon-Frame"></use>
+          </svg></button>
       </form>
     </div>
   </div>
@@ -570,7 +572,7 @@
 
 
 
-
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
