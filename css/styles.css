@@ -58,7 +58,7 @@ button {
   cursor: pointer;
 }
 
-.visually-hidden {
+.visually_hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -111,6 +111,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .menu_list,
@@ -128,12 +129,12 @@ header {
   color: #4d5ae5;
 }
 
-.logo-part {
+.logo_part {
   color: #2e2f42;
 }
 
-.logo-part:hover,
-.logo-part:focus {
+.logo_part:hover,
+.logo_part:focus {
   color: #404BBF;
 }
 
@@ -174,7 +175,7 @@ header {
 
   }
 
-  .nav-menu {
+  .nav_menu {
     display: block;
     position: relative;
     padding: 24px 0;
@@ -187,19 +188,19 @@ header {
     width: 48px;
   }
 
-  .nav-menu:hover,
-  .nav-menu:focus {
+  .nav_menu:hover,
+  .nav_menu:focus {
     color: #404bbf;
   }
 
-  .nav-menu-blue {
+  .nav_menu_blue {
     color: #404bbf;
     display: block;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .nav-menu-blue::after {
+  .nav_menu_blue::after {
     width: 100%;
     height: 4px;
     position: absolute;
@@ -380,7 +381,7 @@ header {
 .list_icons {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 24px;
 }
 
 .link_section {
@@ -551,7 +552,7 @@ header {
 }
 
 
-.menu-adv {
+.menu_adv {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
@@ -584,7 +585,7 @@ header {
 
 @media screen and (min-width: 768px) {
 
-  .menu-adv {
+  .menu_adv {
     gap: 24px;
   }
 
@@ -612,7 +613,7 @@ header {
     padding-bottom: 120px;
   }
 
-  .menu-adv {
+  .menu_adv {
     flex-direction: row;
     gap: 24px;
     flex-wrap: nowrap;
@@ -811,7 +812,7 @@ header {
   border-top: none;
 }
 
-.project-title {
+.project_title {
   text-align: left;
   color: #2e2f42;
   margin-bottom: 8px;
@@ -821,7 +822,7 @@ header {
   letter-spacing: 0.02em;
 }
 
-.project-description {
+.project_description {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -879,7 +880,7 @@ header {
   text-align: center;
 }
 
-.footer-container {
+.footer_container {
   display: flex;
   flex-direction: column;
   gap: 72px;
@@ -900,7 +901,7 @@ header {
 
 }
 
-.logo-footer {
+.logo_footer {
   color: #f4f4fd;
 
 }
@@ -917,7 +918,7 @@ header {
 }
 
 
-.social-media {
+.social_media {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -926,7 +927,7 @@ header {
   margin-bottom: 16px;
 }
 
-.footer-ul {
+.footer_ul {
   display: flex;
   gap: 16px;
   list-style: none;
@@ -964,7 +965,7 @@ header {
 
 
 
-.subscribe-mail {
+.subscribe_mail {
   min-width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
@@ -981,7 +982,7 @@ header {
   padding: 8px 16px;
 }
 
-.subscribe-mail::placeholder {
+.subscribe_mail::placeholder {
   color: #fff;
 }
 
@@ -1021,7 +1022,7 @@ header {
     text-align: left;
   }
 
-  .footer-container {
+  .footer_container {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -1041,7 +1042,7 @@ header {
     margin-right: 24px;
   }
 
-  .footer-container .text,
+  .footer_container .text,
   .social,
   .subscribe {
     flex-direction: row;
@@ -1055,7 +1056,7 @@ header {
     margin: 0 auto
   }
 
-  .subscribe-mail .button_subscribe {
+  .subscribe_mail .button_subscribe {
     justify-content: flex-start;
   }
 
@@ -1078,7 +1079,7 @@ header {
     padding: 100px 0;
   }
 
-  .footer-container {
+  .footer_container {
     padding: 0;
     flex-wrap: nowrap;
     gap: 0;
@@ -1098,7 +1099,7 @@ header {
 }
 
 /*modal*/
-.modal-overlay {
+.modal_overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1128,7 +1129,7 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay.is-open {
+.modal_overlay.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1174,7 +1175,7 @@ header {
 
 }
 
-.form-label {
+.form_label {
   display: block;
   margin-bottom: 4px;
   font-weight: 400;
@@ -1319,20 +1320,20 @@ header {
   margin-right: 8px;
 }
 
-.text-wrapper {
+.text_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
 }
 
-.text-wrapper span {
+.text_wrapper span {
   display: block;
 }
 
 
 
-.send-btn {
+.send_btn {
   border: none;
   border-radius: 4px;
   background-color: #4D5AE5;
